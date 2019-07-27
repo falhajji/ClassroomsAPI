@@ -39,9 +39,20 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'classes',
-
+    'ClassroomsAPP',
+    'rest_framework',
     'crispy_forms',
+    
 ]
+
+REST_FRAMEWORK = {
+    
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )
+    
+}
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
